@@ -3,7 +3,6 @@
 /* Step 1 - Setup type tasks - no code required */
 
 /* Step 2 - Variables */
-
 const fullName = "Samuel Imonah";
 const currentYear = "2023";
 const profilePicture = "images/myself.jpg";
@@ -39,27 +38,15 @@ foodElement.innerHTML += `<br>${food}`;
 const yearElement = document.getElementById("year");
 yearElement.textContent = `${currentYear}`;
 
-const imageElement = document.getElementsByTagName("img");
+const imageElement = document.getElementsByTagName("img")[0];
+
 imageElement.setAttribute('src', profilePicture);
-imageElement.setAttribute('alt', `Profile image of ${profilePicture}`);
+
+imageElement.setAttribute('alt', `Profile image of ${fullName}`);
 
 
 
 
-//foodElement.innerHTML += `${favoriteFood}`
-//foodElement.textContent = favoriteFoods.join(", ");
-//foodElement.innerHTML += "<br>" + favoriteFoods.join("<br>");
-
-//const newFavoriteFood = "Rice";
-
-//favoriteFoods.push(newFavoriteFood);
-
-//foodElement.textContent = favoriteFoods.join(", ");
-
-//const stylesheets = [...document.stylesheets];
-//stylesheets.forEach(function(stylesheets, index) {
-//    console.log("stylesheets ${index + 1} url: ${stylesheets.href}");
-//});
 
 
 
