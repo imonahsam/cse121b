@@ -43,7 +43,7 @@ const sortBy = () => {
         case "utah":
             displayTemples(templesList.filter(temple => temple.location.includes("Utah")));          
             break;
-        case "nonutah":
+        case "notutah":
             displayTemples(templesList.filter(temple => !temple.location.includes("Utah")));
             break;
         case "older":
